@@ -1,0 +1,28 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #3498db; /* El azul de tu imagen */
+  color: white;
+}
+
+nav {
+  padding: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem; /* Tamaño grande como en la foto */
+  opacity: 0.8;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+.content {
+  padding: 0 40px;
+}

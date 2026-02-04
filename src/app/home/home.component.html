@@ -1,0 +1,12 @@
+<div style="padding: 20px; max-width: 500px; margin: auto;">
+  <h2>Mis Metas</h2>
+
+  <input type="text" [(ngModel)]="nuevaMeta" placeholder="Nueva meta...">
+  <button (click)="agregar()">Agregar</button>
+  <hr>
+
+  <div *ngFor="let m of misMetas" style="border-bottom: 1px solid #ccc; padding: 10px; display: flex; justify-content: space-between;">
+    <span>{{ m.meta }}</span>
+    <button (click)="m.id && borrar(m.id)" style="color: red;">Eliminar</button>
+  </div>
+</div>
